@@ -1,0 +1,15 @@
+<div *ngFor="let tool of descList" id='desc'>
+    <h1 [ngClass]="{'itColor':itColor}">{{tool.title}}</h1>
+    <p>{{tool.description }}</p>
+
+</div>
+
+<div>
+    <button (click)="openDescription(tool)" *ngFor="let tool of toolsList">
+  
+        <h1>{{tool.title}}</h1>
+        <img src="{{tool.logo}}">
+    
+        <p>{{tool.resume}}</p>
+    </button>
+</div>
